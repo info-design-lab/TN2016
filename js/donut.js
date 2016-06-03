@@ -8,7 +8,6 @@ var svg = d3.select("#donut")
 var t = d3.select("#donut").append("div")	
 					.attr("class", "tooltip34")				
 					.style("opacity", 0);
-					//$("t").css({top: 500, left: 500, position:'absolute'});
 		
 var arc = d3.svg.arc()
 		.innerRadius(50).outerRadius(75).startAngle(0).endAngle(20.1*Math.PI/18);
@@ -17,6 +16,7 @@ var arc = d3.svg.arc()
 					t.transition().duration(200).style("opacity", 1);
 					t.html("<font size=3>" + "131/233 seats obtained by AIADMK" + "</font>").style("left", 100).style("top", 100);
 					d3.select(".arc1").attr("fill","rgb(204,204,204)"); 
+					d3.select(".arc3").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc4").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc6").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc7").attr("fill","rgb(204,204,204)"); 
@@ -24,6 +24,7 @@ var arc = d3.svg.arc()
 		.on("mouseout", function(d) {				
 					t.transition().duration(500).style("opacity", 0);
 					d3.select(".arc1").attr("fill","#ff0000"); 
+					d3.select(".arc3").attr("fill","#33cc33"); 
 					d3.select(".arc4").attr("fill","#ff4d4d"); 
 					d3.select(".arc6").attr("fill","#70db70"); 
 					d3.select(".arc7").attr("fill","#ff8080"); 
@@ -38,13 +39,15 @@ var arc1 = d3.svg.arc()
 					t.html("<font size=3>" + "89/233 seats obtained by DMK" + "</font>").style("left", 100).style("top", 100);
 					d3.select(".arc").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc3").attr("fill","rgb(204,204,204)"); 
+					d3.select(".arc4").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc6").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc7").attr("fill","rgb(204,204,204)"); 
 		})
 		.on("mouseout", function(d) {				
 					t.transition().duration(500).style("opacity", 0);
 					d3.select(".arc").attr("fill","#29a329"); 
-					d3.select(".arc3").attr("fill","#33cc33"); 
+					d3.select(".arc3").attr("fill","#33cc33");
+					d3.select(".arc4").attr("fill","#ff4d4d");
 					d3.select(".arc6").attr("fill","#70db70"); 
 					d3.select(".arc7").attr("fill","#ff8080");
 		});
@@ -68,6 +71,7 @@ var arc3 = d3.svg.arc()
 					t.html("<font size=3>" + "40.8% of the contested vote share for AIADMK" + "</font>").style("left", 100).style("top", 100);
 					d3.select(".arc1").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc4").attr("fill","rgb(204,204,204)"); 
+					d3.select(".arc6").attr("fill","rgb(204,204,204)");
 					d3.select(".arc7").attr("fill","rgb(204,204,204)"); 
 		})
 		.on("mouseout", function(d) {				
@@ -75,6 +79,7 @@ var arc3 = d3.svg.arc()
 					d3.select(".arc1").attr("fill","#ff0000"); 
 					d3.select(".arc4").attr("fill","#ff4d4d"); 
 					d3.select(".arc7").attr("fill","#ff8080");
+					d3.select(".arc6").attr("fill","#70db70");
 		});
 
 var arc4 = d3.svg.arc()
@@ -86,12 +91,15 @@ var arc4 = d3.svg.arc()
 					d3.select(".arc").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc3").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc6").attr("fill","rgb(204,204,204)");
+					d3.select(".arc7").attr("fill","rgb(204,204,204)");
+					
 		})
 		.on("mouseout", function(d) {				
 					t.transition().duration(500).style("opacity", 0);
 					d3.select(".arc").attr("fill","#29a329"); 
 					d3.select(".arc3").attr("fill","#33cc33"); 
 					d3.select(".arc6").attr("fill","#70db70");
+					d3.select(".arc7").attr("fill","#ff8080");
 		});
 
 var arc5 = d3.svg.arc()
