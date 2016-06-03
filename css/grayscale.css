@@ -49,6 +49,11 @@ font-family: 'Roboto Condensed', sans-serif;
 	color: #000;
 	
 }
+.credit{
+color:#A9A9A9;
+font-weight:500;
+font-size:17px;
+}
 
 @media(min-width:768px) {
     p {
