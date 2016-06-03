@@ -73,7 +73,7 @@ function loadall(){
                                 .attr('style', 'left:' + (mouse[0] + 150) +
                                         'px; top:' + (mouse[1] +40) + 'px')
 
-                                .html(d.properties.AC_NAME+"\nMargin: "+margin_data[+(d.properties.AC_NO)-1].Margin+"\nWinner: "+win[+(d.properties.AC_NO)][2016]);
+                                .html("<b>"+d.properties.AC_NAME+"</b>"+"\nMargin: "+margin_data[+(d.properties.AC_NO)-1].Margin+"\nWinner: "+win[+(d.properties.AC_NO)][2016]);
                            })
                            .on("mouseout", function(d) {
 
