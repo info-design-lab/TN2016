@@ -325,17 +325,7 @@ padding-bottom:150px;
 		
 }
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
+
 
 #map {
     width: 100%;
@@ -387,16 +377,9 @@ padding-bottom:150px;
 }
 }
 
+
 .btn{
-    border-radius: 0;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-.btn{
+	color:#00ff42;
     border-radius: 0;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
