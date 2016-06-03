@@ -71,7 +71,7 @@ function loadall(){
 						   var mouse=d3.mouse(d3.select(this).node());
                            tooltip.classed('hidden', false)
                                 .attr('style', 'left:' + (mouse[0] + 150) +
-                                        'px; top:' + (mouse[1] +10) + 'px')
+                                        'px; top:' + (mouse[1] +40) + 'px')
 
                                 .html(d.properties.AC_NAME+"\nMargin: "+margin_data[+(d.properties.AC_NO)-1].Margin+"\nWinner: "+win[+(d.properties.AC_NO)][2016]);
                            })
