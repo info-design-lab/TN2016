@@ -1,13 +1,16 @@
 var svg = d3.select("body")
     .append("svg")
-    .attr("width", 1000)
-    .attr("height", 1000)
+    .attr("width", 800)
+    .attr("height", 300)
     .append("g")
-    .attr("transform", "translate(100,100)");
+    .attr("transform", "translate(300,150)");
 
-var div = d3.select("body").append("div")	
-					.attr("class", "tooltip")				
+var t = d3.select("#donut").append("div")	
+					.attr("class", "tooltip34")				
 					.style("opacity", 0);
+/*var div = d3.select("body").append("div")	
+					.attr("class", "tooltip")				
+					.style("opacity", 0);*/
 		
 var arc = d3.svg.arc()
 		.innerRadius(50).outerRadius(65).startAngle(0).endAngle(20.1*Math.PI/18);
