@@ -12,9 +12,7 @@ var w = 430;
 			.attr("fill", col);
 			return re;
 		}
-		
-		//var data = [[15,50,]] 
-		
+			
 		function drawLine(A) {
 		
 			var v1 = A[0];
@@ -26,7 +24,6 @@ var w = 430;
 			var lineFunction = d3.svg.line()
 						.x(function (d) {
 								return d.x;
-								// *5 + 50
 						})
 						.y(function (d) {
 								return d.y;
@@ -46,52 +43,76 @@ var w = 430;
 		drawLine([215,30,40])
 		drawLine([249,30,40])
 		
-		var labs = [{val:"0",xpos:12,ypos:60,col:"black",size:"10"},{val:"50",xpos:102,ypos:60,col:"black",size:"10"},{val:"100",xpos:192,ypos:60,col:"black",size:"10"},{val:"150",xpos:282,ypos:60,col:"black",size:"10"},{val:"200",xpos:372,ypos:60,col:"black",size:"10"},{val:"232",xpos:415,ypos:60,col:"black",size:"10"},{val:"Constituencies",xpos:100*2,ypos:80,col:"black",size:"13"}];
+		var labs = [["0",12,52,"black","10"],["50",60,52,"black","10"],["100",107,52,"black","10"],["150",157,52,"black","10"],["200",207,52,"black","10"],["232",241,52,"black","10"],["Constituencies",100,70,"black","13"]];
 
-		svg.selectAll("text")
-		   .data(labs)
-	   	   .enter()
-		   .append("text")
-		   .text(function(d){
-				return d.val;
-			})
-
-		   .attr("y", function(d){
-				return d.ypos;
-			})
-		   .attr("x", function(d){
-				return d.xpos;
-			})
-		   .attr("font-size",function(d){
-				return d.size;
-			})
-			.attr("fill",function(d){
-				return d.col;
-			})
-		   .attr("font-family","Roboto Condensed");
+		function disptext(tex,x,y,col,size) {
 		
-		var rect1 = drawrect(15,10,234*2,35,"lightgray");
-		var rect3 = drawrect(15,15,134*2,25,"green");
-		var rect4 = drawrect(285,15,98*2,25,"red");
+		var text1 = svg.append("text")
+		   .text(tex)
+		   .attr("y", y)
+		   .attr("x", x)
+		   .attr("font-size", size)
+		   .attr("fill",col)
+		   .attr("font-family","Roboto Condensed"); 
+		   
+		   return text1;
+		 }
 		
+		for (var i=0; i<labs.length; i=i+1)
+    	{
+		var v1 = labs[i][0];
+		var v2 = labs[i][1];
+		var v3 = labs[i][2];
+		var v4 = labs[i][3];
+		var v5 = labs[i][4];
+		disptext(v1,v2,v3,v4,v5)
+		}
 		
+		var rect1 = drawrect(15,10,234,25,"lightgray");
+		var rect3 = drawrect(15,15,134,15,"green");
+		var rect4 = drawrect(151,15,98,15,"red");
+		var text1 = disptext("78",1,27,"white",10);
+		var text2 = disptext("55",1,27,"white",10);
+		var text3 = disptext("38",1,27,"white",10);
+		var text4 = disptext("23",1,27,"white",10);
+		var text5 = disptext("134",1,27,"white",10);
+		var text6 = disptext("98",1,27,"white",10);
+				
 		d3.select("#b2").on("click", function() {
     	
-		rect3.transition().duration(1500).attr("width",78*2); 			
-		rect4.transition().duration(1500).attr("x",172).attr("width",55*2);
+		rect3.transition().duration(1000).attr("width",78); 			
+		rect4.transition().duration(1000).attr("x",94).attr("width",55);
+		text1.transition().duration(1000).attr("x",75);
+		text2.transition().duration(1000).attr("x",131);
+		text3.transition().duration(1000).attr("x",1);
+		text4.transition().duration(1000).attr("x",1);
+		text5.transition().duration(1000).attr("x",1);
+		text6.transition().duration(1000).attr("x",1);
 		
 		});
-
+		
 		d3.select("#b3").on("click", function() {
     	
-		rect3.transition().duration(1500).attr("width",38*2);
-		rect4.transition().duration(1500).attr("x",92).attr("width",23*2);	
+		rect3.transition().duration(1000).attr("width",38);
+		rect4.transition().duration(1000).attr("x",54).attr("width",23);	
+		text3.transition().duration(1000).attr("x",35);
+		text4.transition().duration(1000).attr("x",59);
+		text1.transition().duration(1000).attr("x",1);
+		text2.transition().duration(1000).attr("x",1);
+		text5.transition().duration(1000).attr("x",1);
+		text6.transition().duration(1000).attr("x",1);
 		
 		});
 		
 		d3.select("#b1").on("click", function() {
 		
-    	rect3.transition().duration(1500).attr("x",15).attr("width",134*2); 		
-		rect4.transition().duration(1500).attr("x",285).attr("width",98*2);
-				
+    	rect3.transition().duration(1000).attr("x",15).attr("width",134); 		
+		rect4.transition().duration(1000).attr("x",151).attr("width",98);
+		text5.transition().duration(1000).attr("x",131);
+		text6.transition().duration(1000).attr("x",231);
+		text1.transition().duration(1000).attr("x",1);
+		text2.transition().duration(1000).attr("x",1);
+		text3.transition().duration(1000).attr("x",1);
+		text4.transition().duration(1000).attr("x",1);
+			
 		});
