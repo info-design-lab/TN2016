@@ -161,7 +161,6 @@ var arc8 = d3.svg.arc()
 		});
 
 var labs = [{val:"131",xpos:-15,ypos:70,col:"white",size:"15",ang:"rotate(-40)"},{val:"40.8 %",xpos:-15,ypos:92,col:"white",size:"15",ang:"rotate(-40)"},{val:"40.8 %",xpos:-15,ypos:115,col:"white",size:"15",ang:"rotate(-40)"},{val:"89",xpos:-15,ypos:70,col:"white",size:"15",ang:"rotate(40)"},{val:"41.1 %",xpos:-15,ypos:92,col:"white",size:"15",ang:"rotate(40)"},{val:"39.7 %",xpos:-15,ypos:117,col:"white",size:"15",ang:"rotate(40)"} ];
-// {val:"3.8 %",xpos:50,ypos:-4,col:"white",size:"10"},{val:"18.2 %",xpos:63,ypos:-20,col:"white",size:"10"},{val:"19.5 %",xpos:63,ypos:-35,col:"white",size:"10"}];
 
 svg.selectAll("text")
 		   .data(labs).enter().append("text")
