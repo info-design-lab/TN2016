@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <title>Tamil Nadu Elections</title>
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	 <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/topojson.v1.min.js"></script>
+	
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+	<link href="css/nouislider.css" rel="stylesheet">
+	<!--SCRIPTS FOR GRAPHS-->
+	<script type="text/javascript" src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/d3.js"></script>
+	<script src="js/onload.js"></script>
+	<script src="js/onloadslider.js"></script>
+	<script src="js/wNumb.js"></script>
+	
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>	
+	<script>
+	function start(){
+		press(d3.select(".btn1").node());
+		loadall();
+	}
+    </script>
+	</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="start();" >
+    <!-- Intro Header -->
+    <header class="intro">
+    <div class="intro-body">
+	<div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Tamil Nadu<br>Assembly<br>Elections<br>2016</h1>
+                        <p class="intro-text"></p>
+						<div class="bttn">
+                        <a href="#introduction" class="btn page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	<!--intro text-->
+	<section id="introduction" class="container content-section1 text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+			<h2>INTRODUCTION</h2>
+                <p>The biggest story of the 2016 Tamil Nadu Assembly elections is perhaps the historic nature of how AIDMK won a second consecutive term, ending the 32 years and six previous Assembly elections history of regime change in Tamil Nadu at every election.</p>
+				<p>Although AIADMK secured only 1.1 per cent more of the total votes than the DMK-led front, it was enough for the party to clinch 134 seats, 16 more than an absolute majority in the 234-member Assembly and form the next Government. Interestingly if we consider only the ‘contested vote share’ data, DMK polled 41.05% in 176 seats, while the AIADMK polled 40.78% in 232 seats.</p>
+				
+			<p>One obvious conclusion is that the anti-incumbency sentiment in Tamil Nadu was not as strong as what was seen in the previous elections, but a detailed analysis of constituency-wise polling data reveal a much closer contest overall. A combination of DMK’s alliance performance, votes polled by the Third Front (DMDK-PWF-TMC combine), PMK (going alone), and even NOTA (None Of The Above), played a significant role in AIADMK emerging as the single largest party in this a multi-cornered electoral contest.</p>
+				
+			<p>In a series of visualizations, we present the detailed 2016 electoral map in comparison with previous elections, and the effect of the Third Front, PMK and NOTA in comparison to the victory margins in this election.</p>
+			
+			<!--<div class="bttn">
+				<a href="#map1" class="btn page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                </a> 
+              </div>-->	
+            </div>
+        </div>
+    </section>
+	<!--4-division section-->
+	<section id="anti" class="container content-section1 text-center" style=" height: 100%; padding-top:100px;">
+        <div class="row" style=" height:100%;">
+			<div class="contents">
+			<div class="row">
+<div class="col-md-6 quarter" >
+<h2>Voter Turnout & Anti-Incumbency</h2>
+<p>The State saw an overall turnout of 74.26 per cent in this election. In 133 constituencies where voter turnout was over 75 per cent, the AIADMK won 78 seats, while the DMK alliance managed to win 55. In 61 constituencies that saw voters turning out in excess of 80 per cent, the AIADMK still won 38 of those seats. The remaining 23 went to the DMK. The result is contrary to the widely believed hypothesis that a high voter turnout is normally an indication of voter dissatisfaction and therefore, a vote against the ruling party.</p></div>
+<div class="col-md-6 quarter" >
+<div class="txt col-md-3" >
+				<div class="all-the-lonely-people">
+					<div class="row where-do-they-all-come-from">
+						<div class="a col-md-1" >
+							<svg width="130" height="15" >
+								<rect width="15" height="15" style="fill:#4daf4a;"></rect>
+							</svg>
+						</div>
+						<div class="a col-md-3" >
+							<span>AIADMK</span>
+						</div>
+					</div>
+					<div class="row where-do-they-all-come-from" >
+						<div class="a col-md-1">
+							<svg width="130" height="15">
+								<rect width="15" height="15" style="fill:#e41a1c;"></rect>
+							</svg>
+						</div>
+						<div class="a col-md-3">
+							<span>DMK</span>
+						</div>
+					</div>
+					<div class="row where-do-they-all-come-from" >
+						<div class="a col-md-1" >
+							<svg width="140" height="15">
+								<rect width="15" height="15" style="fill:grey;"></rect>
+							</svg>
+						</div>
+						<div class="a col-md-8" >
+							<span>Data Not Available</span>
+						</div>
+					</div>
+				</div>
+									
+			</div>
+<input type="radio" name="vote" id="b1"> All constituencies <br>
+		<input type="radio" name="vote" id="b2"> Constituencies with more than 75% Voting <br>
+		<input type="radio" name="vote" id="b3"> Constituencies with more than 80% Voting <br>
+		<div id="bullet1"></div>
+<script src="js/bullet.js"></script>
+</div>
+</div>
+
+<div class="row" >
+<div class="col-md-6 quarter">
+<h2>Vote Share & Contested Vote Share</h2>
+<p>In terms of the ‘contested vote share’, DMK polled 41.1% in 176 seats, while the AIADMK polled 40.8% in 232 seats. However if we take all 232 seats into consideration, the performance of the allies dragged the vote share of the DMK alliance down to 39.7 per cent whereas the AIADMK got 40.8 per cent. This 1.1 per cent gap has translated into 134 seats for the AIADMK and 98 for the DMK alliance.Overall vote share of the parties calculated as a percentage of total votes stands at AIADMK 40.8%, DMK 31.6%, INC 6.4%, PMK 5.3%, BJP 2.8%, DMDK 2.4%.</p></div>
+<div class="col-md-6 quarter">
+<div id="donut"></div>
+<script type="text/javascript" src="js/donut.js"></script>
+</div>
+</div>
+</div>
+			
+            
+        </div>
+    </section>
+	
+	
+	<!--NOTA VS MARGIN-->
+	<section id="about1" class="container content-section text-center" style="padding-top:100px; padding-bottom:10px;" >
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+			<h2>NOTA</h2>
+                <p>NOTA accounted for 1.3 per cent, or 561244 votes of the total votes polled in the State. There may be no correlation between a candidate’s margin of victory and the number of voters opting for ‘none of the above’, but in 25 constituencies the number of NOTA votes exceeded the margin of victory. NOTA was ahead of Naam Tamilar Katchi (1.1 per cent), MDMK (0.9), CPI (0.8), VCK (0.8), CPI (M) (0.7), IUML (0.7), Tamil Maanila Congress (0.5), and Puthiya Tamilagam (0.5).</p>
+						
+            </div>
+        </div>
+    </section>
+
+    <!-- graph(NOTA vs margin) Section -->
+	
+    <section id="graph1" class="container content-section text-center" style="padding-top:0px; margin-left:50px; padding-bottom:0px;">
+        <div class="row">
+            <div class="col-lg-8" style="padding-left: 0px;">
+                <div id="area1" align="left"></div>
+				<script src="js/nota_vs_margin.js"></script>
+				
+				
+        </div>
+		</div>
+    </section>
+	
+	<!--pmk VS MARGIN-->
+	<section id="about2" class="container content-section text-center" style="padding-bottom:10px; padding-top:0px;">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+			<h2>PMK</h2>
+                <p>Contesting alone, the Pattali Makkal Katchi (PMK) won a vote share of 5.3 per cent in this elections. In 81 constituencies, PMK polled more votes than the margin of victory. It came second in 4 constituencies, third in 66 constituencies and polled better than the Third Front in 71 constituencies. The particularly strong showing of PMK in the northern and north-western districts where DMK also traditionally tends to do well, seems to have hurt DMK’s fortunes.</p>
+             <!--  <div class="bttn">
+				<a href="#graph2" class="btn page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                </a>  
+</div>		-->		
+            </div>
+        </div>
+    </section>
+	<!--graph section-->
+	<section id="graph2" class="container content-section text-center" style="padding-top:0px; margin-left:50px; padding-bottom:0px;">
+        <div class="row">
+            <div class="col-lg-8" style="padding-left: 0px;">
+                <div id="area2" align="left"></div>
+				<script src="js/pmk_vs_margin.js"></script>
+				<!--<div class="bttn">
+				<a id = "graph1_p" href="#about3" class="btn page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                </a> 
+      			</div>-->
+            </div>
+        </div>
+    </section>
+	
+
+	<!--THIRD FRONT VS MARGIN-->
+	<section id="about3" class="container content-section text-center" style="padding-bottom:10px; padding-top:0px;">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+			<h2>THIRD FRONT</h2>
+                <p>Entering the fray as the alternative to the Dravidian parties, the idea of a large ‘third front’ came a cropper this election with the DMDK- PWF-TMC alliance failing to win a single seat. The biggest loser was the Desiya Murpokku Dravida Kazhagam (DMDK), the vote share of which was down to 2.4 per cent from 8 per cent and the number seats to zero from 29 in 2011. The front however managed to poll more votes than the margin of victory in 90 constituencies, playing the role of a spoiler. In combination with the performance of the PMK in the Northern region, this seems to have adversely affected the DMK.</p>
+				<!-- <div class="bttn">
+				<a href="#graph3" class="btn page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                </a>  
+              </div>-->				
+            </div>
+        </div>
+    </section>
+	<!--graph section-->
+	<section id="graph3" class="container content-section text-center" style="padding-top:0px; margin-left:50px; padding-bottom:0px;">
+        <div class="row">
+            <div class="col-lg-8">
+                <div id="area3" align="left"></div>
+				<script src="js/thirdfront_vs_margin.js"></script>
+				<!--<div class="bttn">
+                <a id = "graph1_p" href="#about4" class="btn page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                </a>-->
+             </div>				
+            </div>
+        </div>
+    </section>
+	<!--combined section-->
+	<section id="about4" class="container content-section text-center" style="padding-bottom:10px;padding-top:0px;">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+			<h2>VICTORY MARGINS</h2>
+                <p>As perhaps the closest assembly election ever, many constituencies saw narrow victory margins. While there were 16 constituencies with less than 1000 vote margin, only 4 constituencies had over 50,000 votes margin. The combined graph below plots the victory margins in comparison with the votes polled by PMK, the Third Front and NOTA.</p>
+			<!--	<div class="bttn">
+				<a href="#graph4" class="btn page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                </a>  
+</div>	-->			
+            </div>
+        </div>
+    </section>
+	<!--combined graph section-->
+	<section id="graph4" class="container content-section text-center" style="padding-top:40px; margin-left:10px; padding-bottom:10px;">
+        <div class="row">
+            <div class="col-lg-8">
+                <div id="area4" align="left"></div>
+				<script src="js/all_combined.js"></script>
+				<!--<div class="bttn">
+                <a id = "graph1_p" href="#graph5" class="btn page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                </a>	
+            </div>-->
+			
+			
+        </div>
+		</div>
+    </section>
+	<div id="blah" style="position: relative; float:right; margin-right:50px;">
+<p style="color:#d3d3d3">Scroll to the right to see the full chart</p>			
+            </div>
+			<!--heat map-->
+<section id="map2" class="container content-section text-center" style="padding-bottom: 0px; padding-top:80px;">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+	
+<div id="heat_map" >
+        <div class="toolt1 hidden"></div>
+            <div class="container_heat">
+  <div class="slidebox">
+     <div class="slider" id="slide">
+          <div id="range"></div>
+    </div>
+    
+  </div>
+  <div class="map"></div>
+  <div class="container">
+<div class="row">
+  <div class="col-md-2 leg" style="margin-left:-530px; margin-top:25px; ">
+    <div class="row">
+      <div class="col-md-4 leg">
+    <svg class="boxes" width="100%" height="15">
+      <rect width="100%" height="100%" style="fill:#c3a7c7; padding:0 !important;"></rect>
+    </svg>
+  </div>
+   <div class="col-md-4 leg">
+    <svg class="boxes" width="100%" height="15">
+      <rect width="100%" height="100%" style="fill:#a57aaa; padding:0 !important;"></rect>
+    </svg>
+  </div> 
+  <div class="col-md-4 leg">
+    <svg class="boxes" width="100%" height="15">
+      <rect width="100%" height="100%" style="fill:#874e8e; padding:0 !important;"></rect>
+    </svg>
+  </div>
+  
+    
+    <span class="low">Low</span>
+    <span class="high">High</span>
+    </div>
+  </div>
+  </div>
+</div>
+
+          </div>
+		  
+</div>
+			
+	</div>
+	</div>
+</section>
+			
+	<!--map section-->
+	<section id="map1" class="container content-section2 text-center" style="padding-top:20px; padding-bottom:10px;">
+	<h2 style="padding-left:50px;">THE ELECTORAL MAP</h2>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-1">		
+    <div class="container">
+	<div class="row">
+			<div class="a col-md-3" >
+				<div class="buttons container blocks">
+				<button type="button" class="1 btn1 btn-default" onclick="press(this);">
+					<img class ="icon-sing" src="img/single2.png" alt="where-do-they-all-come-from"></button>
+				<button type="button" class="2 btn1 btn-default" onclick="press(this);">
+					<img class ="ticon-sing" src="img/double2.png" alt="where-do-they-all-come-from"></button>
+				<button type="button" class="4 btn1 btn-default" onclick="press(this);">
+					<img class ="ficon-sing" src="img/four2.png" alt="where-do-they-all-come-from"></button>			
+			</div>
+			</div>
+			<div class="txt col-md-3" >
+				<div class="all-the-lonely-people">
+					<div class="row where-do-they-all-come-from">
+						<div class="a col-md-1" >
+							<svg width="130" height="15" >
+								<rect width="15" height="15" style="fill:#4daf4a;"></rect>
+							</svg>
+						</div>
+						<div class="a col-md-3" >
+							<span>AIADMK</span>
+						</div>
+					</div>
+					<div class="row where-do-they-all-come-from" >
+						<div class="a col-md-1">
+							<svg width="130" height="15">
+								<rect width="15" height="15" style="fill:#e41a1c;"></rect>
+							</svg>
+						</div>
+						<div class="a col-md-3">
+							<span>DMK</span>
+						</div>
+					</div>
+					<div class="row where-do-they-all-come-from" >
+						<div class="a col-md-1" >
+							<svg width="140" height="15">
+								<rect width="15" height="15" style="fill:grey;"></rect>
+							</svg>
+						</div>
+						<div class="a col-md-8" >
+							<span>Data Not Available</span>
+						</div>
+					</div>
+				</div>
+									
+			</div>
+				
+
+				
+			
+	</div>
+	
+	
+	<div class="lay1 hidden"  >
+		<div class="row">
+			<div class="a y0 col-md-12" style="text-align:center;" ></div>
+		</div> 
+	</div>
+	<div class="lay2 hidden" >
+		<div class="row">
+			<div class="a y0 col-md-6" style="text-align:center;" ></div>
+			<div class="a y1 col-md-6" style="text-align:center;" ></div>
+		</div>
+	</div>
+	<div class="lay4 hidden ">
+		<div class="row">
+			<div class="a y0 col-md-3" style="text-align:center;" ></div>
+			<div class="a y1 col-md-3" style="text-align:center;" ></div>
+			<div class="a y2 col-md-3" style="text-align:center;" ></div>
+			<div class="a y3 col-md-3" style="text-align:center;" ></div>
+		</div>
+	</div>
+</div>
+<!--<div class="bttn">
+				<a href="#map2" class="btn page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                </a> 
+</div>-->	
+		 
+	  </div>		
+    </div>
+</section>
+	
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center" style="padding-top:100px;">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>CONTRIBUTIONS AND CREDITS</h2>
+                <p>Content & Design: Venkatesh Rajamanickam, Kuhu Gupta, Manas Sharma, Shailaja Sampat<br>
+                Programming: Shailaja Sampat, Manas Sharma, Kuhu Gupta<br>
+Data Source: <a href ="http://eci.nic.in/eci/eci.html" target="_blank">Election Commission of India</a><br> 
+Code template/components: <a href ="https://d3js.org/" target="_blank">D3.js,</a><a href="http://getbootstrap.com/" target="_blank">Bootstrap,</a><a href="http://refreshless.com/nouislider/" target="_blank">noUSlider</a> and <a href="http://datameet.org/" target="_blank">Data{Meet}</a>
+<br>Photo:PTI<br>Github Link:</p>
+
+                
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer 
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Your Website 2014</p>
+        </div>
+    </footer>-->
+
+   
+
+</body>
+
+</html>

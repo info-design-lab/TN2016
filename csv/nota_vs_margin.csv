@@ -1,0 +1,233 @@
+CONUM,CONAME,MARGIN,NOTA,LOG(MAR),LOG(NOTA),WINPARTY,TYPE1,TYPE2,RECTPOS,INDEX
+1,Shozhinganallur,14913,7332,4.17,3.87,DMK,Margin,Nota,53,0
+2,Maduravoyal,8402,6655,3.92,3.82,AIADMK,Margin,Nota,58,2
+3,Pallavaram,22165,5823,4.35,3.77,DMK,Margin,Nota,63,4
+4,Ambattur,17498,5603,4.24,3.75,AIADMK,Margin,Nota,68,6
+5,Kavundampalayam,8025,5274,3.9,3.72,AIADMK,Margin,Nota,73,8
+6,Tambaram,14445,5007,4.16,3.7,DMK,Margin,Nota,78,10
+7,Avadi,1395,4994,3.14,3.7,AIADMK,Margin,Nota,83,12
+8,Krishnarayapuram,35301,4742,4.55,3.68,AIADMK,Margin,Nota,88,14
+9,Alandur,19169,4727,4.28,3.67,DMK,Margin,Nota,93,16
+10,Coimbatore (North),7724,4574,3.89,3.66,AIADMK,Margin,Nota,98,18
+11,Tiruchirappalli (East),21894,4329,4.34,3.64,AIADMK,Margin,Nota,103,20
+12,Madavaram,15253,4291,4.18,3.63,DMK,Margin,Nota,108,22
+13,Velachery,8872,4225,3.95,3.63,DMK,Margin,Nota,113,24
+14,Salem (South),30453,4121,4.48,3.62,AIADMK,Margin,Nota,118,26
+15,Srirangam,14409,4110,4.16,3.61,AIADMK,Margin,Nota,123,28
+16,Tiruchirappalli (West),28415,4100,4.45,3.61,DMK,Margin,Nota,128,30
+17,Anna Nagar,1687,4048,3.23,3.61,DMK,Margin,Nota,133,32
+18,Salem (North),9873,4009,3.99,3.6,DMK,Margin,Nota,138,34
+19,Palladam,32174,3904,4.51,3.59,AIADMK,Margin,Nota,143,36
+20,Virugampakkam,2333,3897,3.37,3.59,AIADMK,Margin,Nota,148,38
+21,Kinathukadavu,1332,3884,3.12,3.59,AIADMK,Margin,Nota,153,40
+22,Namakkal,13534,3828,4.13,3.58,AIADMK,Margin,Nota,158,42
+23,Mylapore,14728,3788,4.17,3.58,AIADMK,Margin,Nota,163,44
+24,Singanallur,5180,3732,3.71,3.57,DMK,Margin,Nota,168,46
+25,Sulur,36631,3679,4.56,3.57,AIADMK,Margin,Nota,173,48
+26,Kancheepuram,7548,3645,3.88,3.56,DMK,Margin,Nota,178,50
+27,Thousand Lights,8829,3633,3.95,3.56,DMK,Margin,Nota,183,52
+28,Karur,441,3595,2.64,3.56,AIADMK,Margin,Nota,188,54
+29,Chengalpattu,26292,3584,4.42,3.55,DMK,Margin,Nota,193,56
+30,Thiyagarayanagar,3155,3570,3.5,3.55,AIADMK,Margin,Nota,198,58
+31,Kolathur,37730,3554,4.58,3.55,DMK,Margin,Nota,203,60
+32,Saidapet,16255,3541,4.21,3.55,DMK,Margin,Nota,208,62
+33,Avanashi (SC),30674,3534,4.49,3.55,AIADMK,Margin,Nota,213,64
+34,Chepauk-Thiruvallikeni,14164,3494,4.15,3.54,DMK,Margin,Nota,218,66
+35,Madurai North,18839,3479,4.28,3.54,AIADMK,Margin,Nota,223,68
+36,Tiruppur (North),37774,3447,4.58,3.54,AIADMK,Margin,Nota,228,70
+37,Hosur,22964,3445,4.36,3.54,AIADMK,Margin,Nota,233,72
+38,Villivakkam,9321,3409,3.97,3.53,DMK,Margin,Nota,238,74
+39,Mettuppalayam,16114,3408,4.21,3.53,AIADMK,Margin,Nota,243,76
+40,Erode (West),4906,3403,3.69,3.53,AIADMK,Margin,Nota,248,78
+41,Tenkasi,462,3391,2.66,3.53,AIADMK,Margin,Nota,253,80
+42,Manapparai,18277,3364,4.26,3.53,AIADMK,Margin,Nota,258,82
+43,Coimbatore (South),17419,3331,4.24,3.52,AIADMK,Margin,Nota,263,84
+44,Udumalaipettai,5687,3306,3.75,3.52,AIADMK,Margin,Nota,268,86
+45,Poonamallee,11763,3265,4.07,3.51,AIADMK,Margin,Nota,273,88
+46,Thondamuthur,64041,3248,4.81,3.51,AIADMK,Margin,Nota,278,90
+47,Madurai East,32772,3246,4.52,3.51,DMK,Margin,Nota,283,92
+48,Thoothukkudi,20908,3177,4.32,3.5,DMK,Margin,Nota,288,94
+49,Perambur,519,3167,2.72,3.5,AIADMK,Margin,Nota,293,96
+50,Kangayam,13135,3141,4.12,3.5,AIADMK,Margin,Nota,298,98
+51,Yercaud,17394,3136,4.24,3.5,AIADMK,Margin,Nota,303,100
+52,Thiruparankundram,22992,3111,4.36,3.49,AIADMK,Margin,Nota,308,102
+53,Salem (West),7247,3107,3.86,3.49,AIADMK,Margin,Nota,313,104
+54,Erode (East),7794,3096,3.89,3.49,AIADMK,Margin,Nota,318,106
+55,Perambalur,6853,3040,3.84,3.48,AIADMK,Margin,Nota,323,108
+56,Kunnam,18796,3024,4.27,3.48,AIADMK,Margin,Nota,328,110
+57,Kallakurichi,4104,3008,3.61,3.48,AIADMK,Margin,Nota,333,112
+58,Kumarapalayam,47329,2994,4.68,3.48,AIADMK,Margin,Nota,338,114
+59,Bhavanisagar,13104,2980,4.12,3.47,AIADMK,Margin,Nota,343,116
+60,Sriperumbudur,10716,2956,4.03,3.47,AIADMK,Margin,Nota,348,118
+61,Palayamkottai,15872,2947,4.2,3.47,DMK,Margin,Nota,353,120
+62,Sankari,37374,2934,4.57,3.47,AIADMK,Margin,Nota,358,122
+63,Madurai South,23763,2918,4.38,3.47,AIADMK,Margin,Nota,363,124
+64,Thiruvottiyur,4863,2917,3.69,3.46,DMK,Margin,Nota,368,126
+65,Udhagamandalam,10418,2912,4.02,3.46,INC,Margin,Nota,373,128
+66,Dharapuram (SC),10017,2883,4,3.46,INC,Margin,Nota,378,130
+67,Dr.Radhakrishnan Nagar,39545,2873,4.6,3.46,AIADMK,Margin,Nota,383,132
+68,Egmore,10679,2840,4.03,3.45,DMK,Margin,Nota,388,134
+69,Virudhunagar,2870,2835,3.46,3.45,DMK,Margin,Nota,393,136
+70,Veerapandi,14481,2828,4.16,3.45,AIADMK,Margin,Nota,398,138
+71,Rasipuram,9631,2795,3.98,3.45,AIADMK,Margin,Nota,403,140
+72,Dindigul,20719,2783,4.32,3.44,AIADMK,Margin,Nota,408,142
+73,Vasudevanallur,18758,2763,4.27,3.44,AIADMK,Margin,Nota,413,144
+74,Madurai West,16398,2759,4.21,3.44,AIADMK,Margin,Nota,418,146
+75,Gobichettipalayam,11223,2751,4.05,3.44,AIADMK,Margin,Nota,423,148
+76,Attur,17334,2742,4.24,3.44,AIADMK,Margin,Nota,428,150
+77,Bhavani,24887,2716,4.4,3.43,AIADMK,Margin,Nota,433,152
+78,Modakkurichi,2222,2715,3.35,3.43,AIADMK,Margin,Nota,438,154
+79,Sivakasi,14748,2704,4.17,3.43,AIADMK,Margin,Nota,443,156
+80,Karaikudi,18283,2688,4.26,3.43,INC,Margin,Nota,448,158
+81,Thiru-Vi-Ka-Nagar,3322,2685,3.52,3.43,DMK,Margin,Nota,453,160
+82,Madurai Central,5762,2683,3.76,3.43,DMK,Margin,Nota,458,162
+83,Thiruverumbur,16695,2676,4.22,3.43,DMK,Margin,Nota,463,164
+84,Senthamangalam,12333,2664,4.09,3.43,AIADMK,Margin,Nota,468,166
+85,Ottapidaram,493,2612,2.69,3.42,AIADMK,Margin,Nota,473,168
+86,Kumbakonam,8457,2593,3.93,3.41,DMK,Margin,Nota,478,170
+87,Aruppukkottai,18054,2509,4.26,3.4,DMK,Margin,Nota,483,172
+88,Katpadi,23946,2492,4.38,3.4,DMK,Margin,Nota,488,174
+89,Musiri,32087,2485,4.51,3.4,AIADMK,Margin,Nota,493,176
+90,Thalli,6245,2450,3.8,3.39,DMK,Margin,Nota,498,178
+91,Tiruppur (South),15933,2445,4.2,3.39,AIADMK,Margin,Nota,503,180
+92,Thuraiyur,8068,2441,3.91,3.39,DMK,Margin,Nota,508,182
+93,Vandavasi,18068,2421,4.26,3.38,DMK,Margin,Nota,513,184
+94,Vellore,26210,2400,4.42,3.38,DMK,Margin,Nota,518,186
+95,Kovilpatti,428,2350,2.63,3.37,AIADMK,Margin,Nota,523,188
+96,Royapuram,8031,2348,3.9,3.37,AIADMK,Margin,Nota,528,190
+97,Gingee,22057,2326,4.34,3.37,DMK,Margin,Nota,533,192
+98,Rajapalayam,4802,2290,3.68,3.36,DMK,Margin,Nota,538,194
+99,Ponneri,19336,2284,4.29,3.36,AIADMK,Margin,Nota,543,196
+100,Coonoor,3710,2283,3.57,3.36,AIADMK,Margin,Nota,548,198
+101,Tiruchengodu,3390,2279,3.53,3.36,AIADMK,Margin,Nota,553,200
+102,Periyakulam,14350,2275,4.16,3.36,AIADMK,Margin,Nota,558,202
+103,Manachanallur,7522,2274,3.88,3.36,AIADMK,Margin,Nota,563,204
+104,Sankarankovil,14489,2259,4.16,3.35,AIADMK,Margin,Nota,568,206
+105,Vedasandur,19938,2256,4.3,3.35,AIADMK,Margin,Nota,573,208
+106,Vridhachalam,13777,2255,4.14,3.35,AIADMK,Margin,Nota,578,210
+107,Pollachi,13368,2254,4.13,3.35,AIADMK,Margin,Nota,583,212
+108,Dharmapuri,9676,2251,3.99,3.35,DMK,Margin,Nota,588,214
+109,Cheyyar,8527,2248,3.93,3.35,AIADMK,Margin,Nota,593,216
+110,Gudiyattam,11470,2241,4.06,3.35,AIADMK,Margin,Nota,598,218
+111,Cumbum,11221,2219,4.05,3.35,AIADMK,Margin,Nota,603,220
+112,Tirunelveli,601,2218,2.78,3.35,DMK,Margin,Nota,608,222
+113,Valparai,8244,2206,3.92,3.34,AIADMK,Margin,Nota,613,224
+114,Manamadurai,14889,2193,4.17,3.34,AIADMK,Margin,Nota,618,226
+115,Nannilam,21276,2182,4.33,3.34,AIADMK,Margin,Nota,623,228
+116,Thiruvarur,68366,2177,4.83,3.34,DMK,Margin,Nota,628,230
+117,Srivilliputhur,36673,2166,4.56,3.34,AIADMK,Margin,Nota,633,232
+118,Madathukulam,1667,2147,3.22,3.33,DMK,Margin,Nota,638,234
+119,Ranipet,7896,2121,3.9,3.33,DMK,Margin,Nota,643,236
+120,Thiruporur,950,2116,2.98,3.33,AIADMK,Margin,Nota,648,238
+121,Thirumayam,766,2114,2.88,3.33,DMK,Margin,Nota,653,240
+122,Tindivanam,101,2112,2,3.32,DMK,Margin,Nota,658,242
+123,Tirukkoyilur,41057,2110,4.61,3.32,DMK,Margin,Nota,663,244
+124,Athoor,27147,2105,4.43,3.32,DMK,Margin,Nota,668,246
+125,Harbour,4836,2101,3.68,3.32,DMK,Margin,Nota,673,248
+126,Harur,11421,2092,4.06,3.32,AIADMK,Margin,Nota,678,250
+127,Alangulam,4754,2089,3.68,3.32,DMK,Margin,Nota,683,252
+128,Pennagaram,18446,2081,4.27,3.32,DMK,Margin,Nota,688,254
+129,Tiruttani,23141,2076,4.36,3.32,AIADMK,Margin,Nota,693,256
+130,Cuddalore,24413,2062,4.39,3.31,AIADMK,Margin,Nota,698,258
+131,Arakkonam,4161,2049,3.62,3.31,AIADMK,Margin,Nota,703,260
+132,Ambasamudram,13166,2041,4.12,3.31,AIADMK,Margin,Nota,708,262
+133,Arcot,11091,2004,4.04,3.3,DMK,Margin,Nota,713,264
+134,Perundurai,12771,1991,4.11,3.3,AIADMK,Margin,Nota,718,266
+135,Kilvaithinankuppam,9746,1990,3.99,3.3,AIADMK,Margin,Nota,723,268
+136,Panruti,3128,1988,3.5,3.3,AIADMK,Margin,Nota,728,270
+137,Thiruvaiyaru,14343,1987,4.16,3.3,DMK,Margin,Nota,733,272
+138,Kadayanallur,1194,1969,3.08,3.29,IUML,Margin,Nota,738,274
+139,Bodinayakanur,15608,1966,4.19,3.29,AIADMK,Margin,Nota,743,276
+140,Tittagudi (SC),2212,1957,3.34,3.29,DMK,Margin,Nota,748,278
+141,Lalgudi,3837,1953,3.58,3.29,DMK,Margin,Nota,753,280
+142,Jayankondam,22934,1950,4.36,3.29,AIADMK,Margin,Nota,758,282
+143,Tiruppattur,42004,1939,4.62,3.29,DMK,Margin,Nota,763,284
+144,Sholavandan,24857,1930,4.4,3.29,AIADMK,Margin,Nota,768,286
+145,Edappadi,42022,1913,4.62,3.28,AIADMK,Margin,Nota,773,288
+146,Papanasam,24365,1911,4.39,3.28,AIADMK,Margin,Nota,778,290
+147,Andipatti,30196,1909,4.48,3.28,AIADMK,Margin,Nota,783,292
+148,Kulithalai,11896,1906,4.08,3.28,DMK,Margin,Nota,788,294
+149,Thiruvidaimarudur,532,1899,2.73,3.28,DMK,Margin,Nota,793,296
+150,Ariyalur,2043,1896,3.31,3.28,AIADMK,Margin,Nota,798,298
+151,Orathanadu,3645,1882,3.56,3.27,DMK,Margin,Nota,803,300
+152,Palacode,5983,1880,3.78,3.27,AIADMK,Margin,Nota,808,302
+153,Krishnagiri,4891,1855,3.69,3.27,DMK,Margin,Nota,813,304
+154,Natham,2110,1844,3.32,3.27,DMK,Margin,Nota,818,306
+155,Mettur,6282,1829,3.8,3.26,AIADMK,Margin,Nota,823,308
+156,Cheyyur,304,1827,2.48,3.26,DMK,Margin,Nota,828,310
+157,Gudalur,13379,1825,4.13,3.26,DMK,Margin,Nota,833,312
+158,Radhapuram,49,1821,1.69,3.26,AIADMK,Margin,Nota,838,314
+159,Nilakkottai,14776,1819,4.17,3.26,AIADMK,Margin,Nota,843,316
+160,Tiruchendur,26001,1814,4.41,3.26,DMK,Margin,Nota,848,318
+161,Tiruvannamalai,50348,1803,4.7,3.26,DMK,Margin,Nota,853,320
+162,Nagercoil,20956,1802,4.32,3.26,DMK,Margin,Nota,858,322
+163,Vaniyambadi,14526,1774,4.16,3.25,AIADMK,Margin,Nota,863,324
+164,Mannargudi,9937,1774,4,3.25,DMK,Margin,Nota,868,326
+165,Thiruthuraipoondi,13250,1768,4.12,3.25,DMK,Margin,Nota,873,328
+166,Gangavalli,2262,1766,3.35,3.25,AIADMK,Margin,Nota,878,330
+167,Arani,7327,1749,3.86,3.24,AIADMK,Margin,Nota,883,332
+168,Omalur,19956,1739,4.3,3.24,AIADMK,Margin,Nota,888,334
+169,Mailam,12306,1722,4.09,3.24,DMK,Margin,Nota,893,336
+170,Uthangarai,2613,1717,3.42,3.23,AIADMK,Margin,Nota,898,338
+171,Chidambaram,1506,1714,3.18,3.23,AIADMK,Margin,Nota,903,340
+172,Neyveli,17791,1710,4.25,3.23,DMK,Margin,Nota,908,342
+173,Villupuram,22291,1701,4.35,3.23,AIADMK,Margin,Nota,913,344
+174,Sholingur,9732,1691,3.99,3.23,AIADMK,Margin,Nota,918,346
+175,Mayiladuthurai,4778,1688,3.68,3.23,AIADMK,Margin,Nota,923,348
+176,Usilampatti,32906,1672,4.52,3.22,AIADMK,Margin,Nota,928,350
+177,Paramathi-Velur,818,1658,2.91,3.22,DMK,Margin,Nota,933,352
+178,Uthiramerur,12156,1647,4.08,3.22,DMK,Margin,Nota,938,354
+179,Pudukkottai,2084,1637,3.32,3.21,DMK,Margin,Nota,943,356
+180,Ambur,28006,1632,4.45,3.21,AIADMK,Margin,Nota,948,358
+181,Paramakudi,11389,1598,4.06,3.2,AIADMK,Margin,Nota,953,360
+182,Colachel,26028,1593,4.42,3.2,INC,Margin,Nota,958,362
+183,Vilathikulam,18718,1581,4.27,3.2,AIADMK,Margin,Nota,963,364
+184,Thirumangalam,23590,1572,4.37,3.2,AIADMK,Margin,Nota,968,366
+185,Kanniyakumari,5912,1570,3.77,3.2,DMK,Margin,Nota,973,368
+186,Gandharvakottai,3047,1556,3.48,3.19,AIADMK,Margin,Nota,978,370
+187,Anthiyur,5312,1546,3.73,3.19,AIADMK,Margin,Nota,983,372
+188,Kurinjipadi,28108,1541,4.45,3.19,DMK,Margin,Nota,988,374
+189,Pattukkottai,12358,1541,4.09,3.19,AIADMK,Margin,Nota,993,376
+190,Sivaganga,6636,1530,3.82,3.18,AIADMK,Margin,Nota,998,378
+191,Ramanathapuram,33222,1528,4.52,3.18,AIADMK,Margin,Nota,1003,380
+192,Madurantakam,2957,1525,3.47,3.18,DMK,Margin,Nota,1008,382
+193,Kalasapakkam,26414,1510,4.42,3.18,AIADMK,Margin,Nota,1013,384
+194,Gummidipoondi,23395,1484,4.37,3.17,AIADMK,Margin,Nota,1018,386
+195,Jolarpet,10991,1483,4.04,3.17,AIADMK,Margin,Nota,1023,388
+196,Veppanahalli,5228,1482,3.72,3.17,DMK,Margin,Nota,1028,390
+197,Poompuhar,19935,1478,4.3,3.17,AIADMK,Margin,Nota,1033,392
+198,Pappireddippatti,12713,1467,4.1,3.17,AIADMK,Margin,Nota,1038,394
+199,Palani,25586,1460,4.41,3.16,DMK,Margin,Nota,1043,396
+200,Srivaikuntam,3531,1457,3.55,3.16,AIADMK,Margin,Nota,1048,398
+201,Sattur,4427,1455,3.65,3.16,AIADMK,Margin,Nota,1053,400
+202,Vanur,10223,1430,4.01,3.16,AIADMK,Margin,Nota,1058,402
+203,Thiruvallur,5138,1418,3.71,3.15,DMK,Margin,Nota,1063,404
+204,Chengam,12691,1403,4.1,3.15,DMK,Margin,Nota,1068,406
+205,Nanguneri,17315,1399,4.24,3.15,INC,Margin,Nota,1073,408
+206,Vikravandi,6912,1385,3.84,3.14,DMK,Margin,Nota,1078,410
+207,Bargur,982,1382,2.99,3.14,AIADMK,Margin,Nota,1083,412
+208,Sirkazhi,9003,1360,3.95,3.13,AIADMK,Margin,Nota,1088,414
+209,Padmanabhapuram,40905,1359,4.61,3.13,DMK,Margin,Nota,1093,416
+210,Tiruchuli,26577,1328,4.42,3.12,DMK,Margin,Nota,1098,418
+211,Peravurani,995,1294,3,3.11,AIADMK,Margin,Nota,1103,420
+212,Oddanchatram,65727,1274,4.82,3.11,DMK,Margin,Nota,1108,422
+213,Anaikattu,8768,1237,3.94,3.09,DMK,Margin,Nota,1113,424
+214,Polur,8273,1230,3.92,3.09,DMK,Margin,Nota,1118,426
+215,Vedaranyam,22998,1206,4.36,3.08,AIADMK,Margin,Nota,1123,428
+216,Tirupattur,7647,1193,3.88,3.08,DMK,Margin,Nota,1128,430
+217,Kilpennathur,34666,1164,4.54,3.07,DMK,Margin,Nota,1133,432
+218,Vilavancode,33143,1149,4.52,3.06,INC,Margin,Nota,1138,434
+219,Killiyoor,46295,1142,4.67,3.06,INC,Margin,Nota,1143,436
+220,Bhuvanagiri,5488,1132,3.74,3.05,DMK,Margin,Nota,1148,438
+221,Alangudi,9941,1068,4,3.03,DMK,Margin,Nota,1153,440
+222,Mudhukulathur,13348,1059,4.13,3.02,INC,Margin,Nota,1158,442
+223,Kilvelur,10170,1049,4.01,3.02,DMK,Margin,Nota,1163,444
+224,Sankarapuram,14528,1032,4.16,3.01,DMK,Margin,Nota,1168,446
+225,Kattumannarkoil(SC),87,1025,1.94,3.01,AIADMK,Margin,Nota,1173,448
+226,Nagapattinam,20550,996,4.31,3,AIADMK,Margin,Nota,1178,450
+227,Viralimalai,8447,974,3.93,2.99,AIADMK,Margin,Nota,1183,452
+228,Tiruvadanai,8696,939,3.94,2.97,AIADMK,Margin,Nota,1188,454
+229,Rishivandiyam,20503,867,4.31,2.94,DMK,Margin,Nota,1193,456
+230,Ulundurpettai,4164,829,3.62,2.92,AIADMK,Margin,Nota,1198,458
+231,Aranthangi,2291,775,3.36,2.89,AIADMK,Margin,Nota,2003,460
+232,Melur,19723,757,4.29,2.88,AIADMK,Margin,Nota,2008,462
