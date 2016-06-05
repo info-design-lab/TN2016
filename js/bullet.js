@@ -46,8 +46,8 @@ var w = 430;
 		var text2 = disptext("55",-5,31,"white",13);
 		var text3 = disptext("38",-5,31,"white",13);
 		var text4 = disptext("23",-5,31,"white",13);
-		var text5 = disptext("134",-5,31,"white",13);
-		var text6 = disptext("98",-5,31,"white",13);
+		var text5 = disptext("134",131,31,"white",13);
+		var text6 = disptext("98",231,31,"white",13);
 				
 		d3.select("#b2").on("click", function() {
     	
