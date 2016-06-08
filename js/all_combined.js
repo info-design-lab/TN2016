@@ -5,7 +5,6 @@ var w = 3700;
 				.append("svg")
 				.attr("width", w)
 				.attr("height", h);
-				//$("svg").css({top: -200, left: -270, position:'relative'});
 		
 		var div = d3.select("#area4").append("div")	
 					.attr("class", "tooltip1")				
@@ -78,12 +77,11 @@ var w = 3700;
                 	.attr("d", lineFunction(lineData))
                 	.style("stroke-width", 0.7)
                 	.style("stroke", function() {
-					if (v2 == 338 || v2 == 570) { return "red"; }	
-					else if (v2 == 358 || v2 == 551) { return "green"; }
-					else if (v2 == 397 || v2 == 533) { return "blue"; }
+					if (v2 == 338 || v2 == 570) { return "#ff7f00"; }	
+					else if (v2 == 358 || v2 == 551) { return "#984ea3"; }
+					else if (v2 == 397 || v2 == 533) { return "#377eb8"; }
 					else if (v2 == 396) { return "black"; }
 					else {return "rgb(232,232,232)";}
-					// "rgb(169,169,169)";}
 				;})
 	}
 	
@@ -108,13 +106,16 @@ var w = 3700;
 
 		svg.append("path")
                 	.attr("d", lineFunction(lineData))
-                	.style("stroke-width", 0.7)
+                	.style("stroke-width", 1.3)
 			
-                	.style("stroke", function() {            
-				if (v5 == "NOTA") {return "red";}  
-            			else if (v5 == "PMK") { return "green";} 
-				else if ( v5 == "ThirdFront") { return "blue";}         
-        		;})   
+					.style("stroke", function() {    
+					
+					if (v5 == "NOTA") {return "#ff7f00";}  
+            		else if (v5 == "PMK") { return "#984ea3";} 
+					else if ( v5 == "ThirdFront") { return "#377eb8";}   
+        		;});
+					
+
 		}
 		
 	var circle = svg.selectAll("circle")
@@ -129,50 +130,40 @@ var w = 3700;
     			return h - d[1];		  
 		})
 	    	.attr("r", function(d) {
-    			if ( d[2] == "DMK" || d[2] == "INC" || d[2] == "IUML") { return 2.7}
-			else { return 2}		  
+				return 2.3;
+    		  
 		})
 		.attr("fill", function(d) {
-    			if ( d[2] == "DMK" || d[2] == "INC" || d[2] == "IUML") { return "black";}
-			else { return "white";}		  
+    			if ( d[2] == "DMK" || d[2] == "INC" || d[2] == "IUML") { return "red";}
+			else { return "green";}		  
 		})   
-	       .attr("stroke", function(d) {
-    			if ( d[2] == "DMK" || d[2] == "INC" || d[2] == "IUML" ) { return "white";}
-			else { return "black";}		  
-		})  
-	       .attr("stroke-width", 1);
+	    .attr("stroke-width", 1);
 	
 	var circ = svg.append("circle") 
 		.attr("cx", 1045)
 	    .attr("cy", 40) 
-	    .attr("r", 5)
-	    .attr("fill", "white")
-		.attr("stroke", "black")
-		.attr("stroke-width", 3);
-
+	    .attr("r", 6)
+	    .attr("fill", "green")
+		
 	var circ = svg.append("circle") 
 		.attr("cx", 1045)
 	    .attr("cy", 63) 
 	    .attr("r", 6)
-	    .attr("fill", "black");
+	    .attr("fill", "red");
 	
 	var circ = svg.append("circle") 
 		.attr("cx", 2450)
 	    .attr("cy", 40) 
-	    .attr("r", 5)
-	    .attr("fill", "white")
-		.attr("stroke", "black")
-		.attr("stroke-width", 3);
-
+	    .attr("r", 6)
+	    .attr("fill", "green")
+		
 	var circ = svg.append("circle") 
 		.attr("cx", 2450)
 	    .attr("cy", 63) 
 	    .attr("r", 6)
-	    .attr("fill", "black");
+	    .attr("fill", "red");
 		
 	var labs = [{val:"AIADMK+",xpos:1065,ypos:45,col:"black",size:"15"},{val:"DMK+",xpos:1065,ypos:68,col:"black",size:"15"},{val:"AIADMK+",xpos:2470,ypos:45,col:"black",size:"15"},{val:"DMK+",xpos:2470,ypos:68,col:"black",size:"15"},{val:"10",xpos:25,ypos:510,col:"black",size:"15"},{val:"100",xpos:18,ypos:410,col:"black",size:"15"},{val:"1000",xpos:13,ypos:310,col:"black",size:"15"},{val:"10000",xpos:7,ypos:210,col:"black",size:"15"},{val:"100000",xpos:1,ypos:110,col:"black",size:"15"},{val:"10",xpos:3530,ypos:510,col:"black",size:"15"},{val:"100",xpos:3530,ypos:410,col:"black",size:"15"},{val:"1000",xpos:3530,ypos:310,col:"black",size:"15"},{val:"10000",xpos:3530,ypos:210},{val:"100000",xpos:3530,ypos:110}, {val:"VOTES",xpos:8,ypos:260,col:"gray",size:"15"}, {val:"CONSTITUENCY-WISE VICTORY MARGINS IN COMPARISON TO NOTA, PMK and THIRD FRONT", xpos:54,ypos:27,col:"black",size:"18"}, {val:"The chart shows the vote margin of victory in each constituency in ascending order of magnitude. For each constituency, the number of votes", xpos:54,ypos:50,col:"gray",size:"14"}, {val:"polled by NOTA, PMK and the Third Front are represented with three dots. The length of the lines indicate the quantum of the difference. Votes", xpos:54,ypos:66,col:"gray",size:"14"}, {val:"along the Y-axis are shown on a logarithmic scale to allow for comparison. ", xpos:54,ypos:83,col:"gray",size:"14"},{val:"Hover mouse cursor over the chart to explore constituency details.", xpos:464,ypos:83,col:"#d92b2b",size:"14"},{val:"NOTA",xpos:1220,ypos:40,col:"black",size:"15"},{val:"PMK",xpos:1220,ypos:58,col:"black",size:"15"},{val:"Third Front",xpos:1220,ypos:75,col:"black",size:"15"},{val:"NOTA",xpos:2625,ypos:40,col:"black",size:"15"},{val:"PMK",xpos:2625,ypos:58,col:"black",size:"15"},{val:"Third Front",xpos:2625,ypos:75,col:"black",size:"15"}];
-	
-	// {val:"Votes",xpos:12,ypos:60}, {val:"Comparison of NOTA, PMK's performance and Third Front effect with respect to Winning Margins for different constituencies",xpos:150,ypos:60},{val:"Comparison of NOTA, PMK's performance and Third Front effect with respect to Winning Margins for different constituencies",xpos:1480,ypos:60},{val:"Comparison of NOTA, PMK's performance and Third Front effect with respect to Winning Margins for different constituencies",xpos:2800,ypos:60},{val:"NOTA",xpos:1220,ypos:40},{val:"PMK",xpos:1220,ypos:58},{val:"Third Front",xpos:1220,ypos:75},{val:"NOTA",xpos:2625,ypos:40},{val:"PMK",xpos:2625,ypos:58},{val:"Third Front",xpos:2625,ypos:75}];
 	
 	svg.selectAll("text")
 		   .data(labs)
