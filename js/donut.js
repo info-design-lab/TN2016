@@ -14,7 +14,7 @@ var arc = d3.svg.arc()
 		svg.append("path").attr("class", "arc").attr("d", arc).attr("fill","#29a329")
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
-					t.html("<font size=3>" + "131/233 seats obtained by AIADMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "131/232 seats obtained by AIADMK" + "</font>").style("left", 100).style("top", 100);
 					d3.select(".arc1").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc3").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc4").attr("fill","rgb(204,204,204)"); 
@@ -36,7 +36,7 @@ var arc1 = d3.svg.arc()
 		.on("mouseover", function(d) {	
 					t.transition().duration(200).style("opacity", 1);
 					
-					t.html("<font size=3>" + "89/233 seats obtained by DMK" + "</font>").style("left", 100).style("top", 100);
+					t.html("<font size=3>" + "89/232 seats obtained by DMK" + "</font>").style("left", 100).style("top", 100);
 					d3.select(".arc").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc3").attr("fill","rgb(204,204,204)"); 
 					d3.select(".arc4").attr("fill","rgb(204,204,204)"); 
