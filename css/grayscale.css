@@ -715,7 +715,7 @@ t.tooltip34 {
 #donut{
 	text-align:center;
 }
-.btn1 {
+.btn2 {
   -webkit-border-radius: 9;
   -moz-border-radius: 9;
   border-radius: 9px;
@@ -728,7 +728,7 @@ t.tooltip34 {
   text-decoration: none;
 }
 
-.btn1:hover {
+.btn2:hover {
   background: #ffa500;
   text-decoration: none;
 }
