@@ -716,19 +716,20 @@ t.tooltip34 {
 	text-align:center;
 }
 .btn2 {
-  -webkit-border-radius: 9;
-  -moz-border-radius: 9;
-  border-radius: 9px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
   font-family: Arial;
   color: #ffffff;
   font-size: 20px;
-  background: #ffa500;
+  background: #ff6693;
   padding: 10px 35px 10px 35px;
   border: solid #000000 1px;
   text-decoration: none;
 }
 
 .btn2:hover {
-  background: #ffa500;
+	color: #ffffff;
+  background: #ff6693;
   text-decoration: none;
 }
