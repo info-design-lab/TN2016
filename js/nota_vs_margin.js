@@ -2,8 +2,8 @@ var dataset_nota = [];
 		d3.csv("csv/nota_vs_margin.csv", function(data) {
 
   		data.forEach(function(d) {
-		dataset_nota.push([+d['CONUM'], +d['LOG(MAR)']*100,d["WINPARTY"],d["TYPE1"],+d["MARGIN"],+d["NOTA"],d["CONAME"],+d["RECTPOS"], +d['LOG(NOTA)']*100, +d["INDEX"]])
-    		dataset_nota.push([+d['CONUM'], +d['LOG(NOTA)']*100,d["WINPARTY"],d["TYPE2"],+d["MARGIN"],+d["NOTA"],d["CONAME"],+d["RECTPOS"], +d['LOG(MAR)']*100, +d["INDEX"]+1])
+		dataset_nota.push([+d['CONUM'], +d['LOG(MAR)']*100,d["WINPARTY"],d["TYPE1"],+d["MARGIN"],+d["NOTA"],d["CONAME"],+d["RECTPOS"], +d['LOG(NOTA)']*100, +d["INDEX"], +d["FLAG"]])
+    	dataset_nota.push([+d['CONUM'], +d['LOG(NOTA)']*100,d["WINPARTY"],d["TYPE2"],+d["MARGIN"],+d["NOTA"],d["CONAME"],+d["RECTPOS"], +d['LOG(MAR)']*100, +d["INDEX"]+1, +d["FLAG"]+1 ])
 		});
 
 		var w = 1302;
@@ -13,7 +13,6 @@ var dataset_nota = [];
 				.append("svg")
 				.attr("width", w)
 				.attr("height", h);
-				//$("svg").css({top: -200, left: -270, position:'relative'});
 				
 		var div = d3.select("#area1").append("div")	
 					.attr("class", "tooltip1")				
@@ -42,13 +41,17 @@ var dataset_nota = [];
 											else {
 											drawLineRollover([{"x": d[0], "y": d[1], "p": d[2]}, {"x": d[0], "y": d[8]+3, "p": d[2]}],1);
 											};
-											/*if(d[9]%2==0) {
-												drawPoint(d[0],d[8],3)
-											}*/
+											if(d[10]==1) {
+												drawPoint(d[0],d[1],2.3,"black")
+											}
 											
 					  })					
 					 .on("mouseout", function(d) {	
 											d3.select(this).attr("width", 15).style("fill", "white")
+											if(d[10]==1) {
+												drawPoint(d[0],d[1],2.5,"white")
+												drawPoint(d[0],d[1],1.6,"black")
+											}
 											if(d[1]<d[8]) {
 												drawLineRollover([{"x": d[0], "y": d[1], "p": d[2]}, {"x": d[0], "y": d[8]-3, "p": d[2]}],4);
 												drawLineRollover([{"x": d[0], "y": d[1], "p": d[2]}, {"x": d[0], "y": d[8]-3, "p": d[2]}],3);
@@ -58,6 +61,7 @@ var dataset_nota = [];
 												drawLineRollover([{"x": d[0], "y": d[1], "p": d[2]}, {"x": d[0], "y": d[8]+3, "p": d[2]}],5);
 											};
 											div.transition().duration(500).style("opacity", 0);	
+											
 					});
 			
 		function drawLine(A) {
@@ -269,16 +273,17 @@ var dataset_nota = [];
 			var v1 = dataset_nota[i][0];
 			var v2 = dataset_nota[i][1];
 			
-			drawPoint(v1,v2,1.5)
+			drawPoint(v1,v2,1.5,"black")
 		};
 				
 				
-		function drawPoint(v1,v2,r) {
+		function drawPoint(v1,v2,r,col) {
 		
 		var circle = svg.append("circle")
 					    .attr("cx",v1*5 + 50)		  
 						.attr("cy", h - v2)		  
-						.attr("r", r);
+						.attr("r", r)
+						.attr("fill", col);
 		}
 										
 		for (var i=0; i<dataset_nota.length; i=i+2) {
