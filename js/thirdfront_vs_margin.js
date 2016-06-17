@@ -2,8 +2,8 @@ var dataset_3f = [];
 		d3.csv("csv/thirdfront_vs_margin.csv", function(data) {
 
   		data.forEach(function(d) {
-		dataset_3f.push([+d['CONUM'], +d['LOG(MAR)']*100,d["WINPARTY"],d["TYPE1"],+d["MARGIN"],+d["3F"],d["CONAME"],+d["RECTPOS"], +d['LOG(3F)']*100, +d["INDEX"]])
-    		dataset_3f.push([+d['CONUM'], +d['LOG(3F)']*100,d["WINPARTY"],d["TYPE2"],+d["MARGIN"],+d["3F"],d["CONAME"],+d["RECTPOS"], +d['LOG(MAR)']*100, +d["INDEX"]+1])
+		dataset_3f.push([+d['CONUM'], +d['LOG(MAR)']*100,d["WINPARTY"],d["TYPE1"],+d["MARGIN"],+d["3F"],d["CONAME"],+d["RECTPOS"], +d['LOG(3F)']*100, +d["INDEX"], +d["FLAG"]])
+    		dataset_3f.push([+d['CONUM'], +d['LOG(3F)']*100,d["WINPARTY"],d["TYPE2"],+d["MARGIN"],+d["3F"],d["CONAME"],+d["RECTPOS"], +d['LOG(MAR)']*100, +d["INDEX"]+1, +d["FLAG"]+1])
 		});
 
 		var w = 1302;
@@ -42,13 +42,17 @@ var dataset_3f = [];
 											else {
 											drawLineRollover([{"x": d[0], "y": d[1], "p": d[2]}, {"x": d[0], "y": d[8]+3, "p": d[2]}],1);
 											};
-											if(d[9]%2==0) {
-												drawPoint(d[0],d[8],3)
+											if(d[10]==1) {
+												drawPoint(d[0],d[1],2.3,"black")
 											}
 											
 					  })					
 					 .on("mouseout", function(d) {	
 											d3.select(this).attr("width", 15).style("fill", "white")
+											if(d[10]==1) {
+												drawPoint(d[0],d[1],2.5,"white")
+												drawPoint(d[0],d[1],1.6,"black")
+											}
 											if(d[1]<d[8]) {
 												drawLineRollover([{"x": d[0], "y": d[1], "p": d[2]}, {"x": d[0], "y": d[8]-3, "p": d[2]}],4);
 												drawLineRollover([{"x": d[0], "y": d[1], "p": d[2]}, {"x": d[0], "y": d[8]-3, "p": d[2]}],3);
@@ -91,18 +95,6 @@ var dataset_3f = [];
 											if (v5 == "AIADMK") {return "green"}  
 											else { return "red" }          
 						;}) 
-						.on("mouseover", function (d) {
-											div.transition().duration(200).style("opacity", .5);		
-											//div.html("Constituency: " + v10 + "<br/>" + v6 + ": " + v7 + "<br/>" + v8 + ": " + v9 ).style("left", (d3.event.pageX) + "px").style("top", (d3.event.pageY - 28) + "px");
-											d3.select(this).style("stroke-width", 2);
-						})
-						.on("mouseout", function () {
-											d3.select(this).style("stroke", function() {            
-																				if (v5 == "AIADMK") {return "green"}  
-																				else { return "red" }
-																			;}).style("stroke-width", 0.7);
-											div.transition().duration(500).style("opacity", 0);	
-						;})
 			
 		}
 			
@@ -229,7 +221,6 @@ var dataset_3f = [];
 		 
 		var aia = [{val:"AIADMK+",xpos:1200,ypos:27,col:"black",size:"15"},{val:"DMK+",xpos:1200,ypos:48,col:"black",size:"15"},{val:"10",xpos:25,ypos:510, col:"black",size:"15"},{val:"100",xpos:18,ypos:410,col:"black",size:"15"},{val:"1000",xpos:13,ypos:310,col:"black",size:"15"},{val:"10000",xpos:7,ypos:210,col:"black",size:"15"},{val:"100000",xpos:1,ypos:110,col:"black",size:"15"},{val:"10",xpos:1220,ypos:510,col:"black",size:"15"},{val:"100",xpos:1220,ypos:410,col:"black",size:"15"},{val:"1000",xpos:1220,ypos:310,col:"black",size:"15"},{val:"10000",xpos:1220,ypos:210,col:"black",size:"15"},{val:"100000",xpos:1220,ypos:110,col:"black",size:"15"},{val:"Avg. 3rd Front",xpos:1220,ypos:225,col:"blue",size:"13"}, {val:"VOTES",xpos:8,ypos:260,col:"gray",size:"15"}, {val:"CONSTITUENCIES",xpos:620,ypos:524,col:"gray",size:"15"},{val:"CONSTITUENCY-WISE EFFECT OF THE THIRD FRONT", xpos:54,ypos:27,col:"black",size:"18"}, {val:"The chart shows the number of votes that the Third Front polled in each constituency in descending order of magnitude. The points above the curve indicate the constituencies where the victory", xpos:54,ypos:50,col:"gray",size:"14"}, {val:"margins are more than the votes polled by the Third Front, while the points below the curve, vice-versa. The length of the lines indicate the quantum of the difference. Votes along the Y-axis are", xpos:54,ypos:66,col:"gray",size:"14"},
 		{val:" are shown on a logarithmic scale to allow for comparison.", xpos:54,ypos:83,col:"gray",size:"14"}, {val:"Hover mouse cursor over the chart to explore constituency details.", xpos:375,ypos:83,col:"#d92b2b",size:"14"}];
-		// {val:"The chart shows the number of votes that the Third Front polled in each constituency in descending order of magnitude. The points above the", xpos:54,ypos:50,col:"gray",size:"13"}, {val:"curve indicate the constituencies where the victory margins are more than the votes polled by the Third Front, while the points below the curve,", xpos:54,ypos:63,col:"gray",size:"13"}, {val:"vice-versa. The length of the lines indicate the quantum of the difference. Votes along the Y-axis are shown on a logarithmic scale to allow for", xpos:54,ypos:76,col:"gray",size:"13"}, {val:"comparison. Hover mouse cursor over the chart to explore constituency details.", xpos:54,ypos:89,col:"gray",size:"13"}];
 		
 		var rect = svg.append("rect") 
 			.attr("x", 1175) 
@@ -272,16 +263,17 @@ var dataset_3f = [];
 			var v1 = dataset_3f[i][0];
 			var v2 = dataset_3f[i][1];
 			
-			drawPoint(v1,v2,1.5)
+			drawPoint(v1,v2,1.5,"black")
 		};
 				
 				
-		function drawPoint(v1,v2,r) {
+		function drawPoint(v1,v2,r,col) {
 		
 		var circle = svg.append("circle")
 					    .attr("cx",v1*5 + 50)		  
 						.attr("cy", h - v2)		  
-						.attr("r", r);
+						.attr("r", r)
+						.attr("fill", col);
 		}
 										
 		for (var i=0; i<dataset_3f.length; i=i+2) {
